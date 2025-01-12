@@ -7,4 +7,5 @@ export const options_GEO_API = {
   },
 };
 
-
+export const WEATHER_API_KEY = "7db60cfd57b6ef09fc4a52ebaded0681";
+export const WEATHER_API_URL = "https://api.openweathermap.org/data/2.5";
