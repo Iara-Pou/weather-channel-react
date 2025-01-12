@@ -4,7 +4,7 @@
   border: 2px solid white;
   background-color: rgb(255, 255, 255, 20%);
   border-radius: 10px;
-  margin: 20px auto 0 auto;
+  margin: 20px auto 2.5em auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,6 +28,7 @@
 .weather-description {
   font-weight: 400;
   margin: 0;
+  text-transform: capitalize;
 }
 
 .weather-icon {
