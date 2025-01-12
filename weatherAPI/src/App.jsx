@@ -1,5 +1,16 @@
+import Search from "./components/search/search";
+import "./App.css";
+
 function App() {
-  return <p>Proyecto</p>;
+  const manejarBusqueda = (searchData) => {
+    console.log(searchData);
+  };
+
+  return (
+    <div className="contenedor">
+      <Search onSearchChange={manejarBusqueda} />
+    </div>
+  );
 }
 
 export default App;
