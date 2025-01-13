@@ -31,9 +31,6 @@ function App() {
       .catch((err) => console.error(err));
   };
 
-  console.log(currentWeather);
-  console.log(forecast);
-
   return (
     <>
       <Navbar />
