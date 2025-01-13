@@ -1,0 +1,60 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #1e2432;
+  padding: 1em 4em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  text-decoration: none;
+  color: #1e2432;
+  font-size: 1em;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #2f394e;
+}
+
+.navbar-image {
+  width: 2em;
+  height: 2em;
+  object-fit: cover;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.left-side p {
+  font-family: "Rubik Spray Paint", serif;
+  font-size: 1.5em;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", serif;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.right-side img {
+  width: 1.5em;
+  height: 1.5em;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease, transform 0.5s ease;
+}
+
+.right-side img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
