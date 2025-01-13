@@ -4,6 +4,28 @@ import { url_GEO_API, options_GEO_API } from "../../api";
 
 const Search = ({ onSearchChange }) => {
   const [search, setSearch] = useState(null);
+
+  const customStyles = {
+    option: (provided, state) => ({
+      ...provided,
+      color: state.isSelected ? "#fff" : state.isFocused ? "#000" : "#555",
+      backgroundColor: state.isSelected
+        ? "#0073e6"
+        : state.isFocused
+        ? "#f0f0f0"
+        : "#fff",
+      cursor: "pointer",
+    }),
+    placeholder: (provided) => ({
+      ...provided,
+      color: "#888",
+    }),
+    singleValue: (provided) => ({
+      ...provided,
+      color: "#000",
+    }),
+  };
+
   const loadOptions = (valorInput) => {
     return fetch(
       `${url_GEO_API}/cities?minPopulation=1000000&namePrefix=${valorInput}`,
@@ -35,6 +57,7 @@ const Search = ({ onSearchChange }) => {
       value={search}
       onChange={manejarBusqueda}
       loadOptions={loadOptions}
+      styles={customStyles}
     />
   );
 };
