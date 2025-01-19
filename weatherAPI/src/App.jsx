@@ -5,6 +5,7 @@ import { WEATHER_API_KEY, WEATHER_API_URL } from "./api";
 import { useState } from "react";
 import Forecast from "./components/forecast/Forecast";
 import Navbar from "./components/navbar/Navbar";
+import CurrentForecast from "./components/current-forecast/CurrentForecast";
 
 function App() {
   const [currentWeather, setCurrentWeather] = useState(null);
@@ -27,6 +28,9 @@ function App() {
 
         setCurrentWeather({ city: searchData.label, ...weatherResponse });
         setForecast({ city: searchData.label, ...forecastResponse });
+
+        //clima de hoy sale de acá
+        console.log(forecastResponse);
       })
       .catch((err) => console.error(err));
   };
@@ -37,6 +41,7 @@ function App() {
       <div className="contenedor">
         <Search onSearchChange={manejarBusqueda} />
         {currentWeather && <CurrentWeather data={currentWeather} />}
+        <CurrentForecast />
         {forecast && <Forecast data={forecast} />}
       </div>
     </>

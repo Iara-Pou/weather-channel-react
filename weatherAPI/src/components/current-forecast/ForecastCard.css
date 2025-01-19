@@ -1,0 +1,57 @@
+.forecast-card {
+  border: solid white 2px;
+  border-radius: 1em;
+  width: 90px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.1em;
+  padding: 0.5em;
+}
+
+.forecast-card p {
+  margin: 0;
+}
+
+.forecast-card .top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forecast-card .top img {
+  width: 100%;
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.forecast-card .bottom {
+  display: flex;
+  justify-content: center;
+  gap: 0.2em;
+}
+
+.forecast-card .bottom img {
+  filter: brightness(1000%);
+}
+
+.icono-precipitacion {
+  width: 0.8em;
+}
+
+.hora-mock {
+  margin: 0.5em 0;
+  text-align: center;
+  font-size: small;
+}
+
+.top p {
+  font-weight: bolder;
+  font-size: 1.5em;
+  letter-spacing: -2.5px;
+  margin: 0;
+}
+
+.bottom p {
+  font-size: small;
+  font-weight: bold;
+}
