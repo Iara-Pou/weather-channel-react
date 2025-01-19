@@ -3,16 +3,19 @@ import ForecastCard from "./ForecastCard";
 
 const CurrentForecast = () => {
   return (
-    <div className="current-forecast">
-      <ForecastCard />
-      <ForecastCard />
-      <ForecastCard />
-      <ForecastCard />
-      <ForecastCard />
-      <ForecastCard />
-      <ForecastCard />
-      <ForecastCard />
-    </div>
+    <>
+      <h3>Así estará el clima durante el día de hoy</h3>
+      <div className="current-forecast">
+        <ForecastCard />
+        <ForecastCard />
+        <ForecastCard />
+        <ForecastCard />
+        <ForecastCard />
+        <ForecastCard />
+        <ForecastCard />
+        <ForecastCard />
+      </div>
+    </>
   );
 };
 
